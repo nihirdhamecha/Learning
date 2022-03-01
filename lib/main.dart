@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'homepage.dart';
+
 void main() {
   runApp(LearnApp());
 }
@@ -10,13 +12,7 @@ class LearnApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-            child: Text("Maja aave che"),
-          ),
-        ),
-      ),
+      home: homepage(),
     );
   }
 }
