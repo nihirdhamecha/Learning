@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:learning/utils/routes.dart';
 
 import 'Screens/homepage.dart';
 import 'Screens/loginpage.dart';
@@ -21,11 +22,11 @@ class LearnApp extends StatelessWidget {
       ),
 
       //darkTheme: ThemeData(brightness: Brightness.dark),
-      //initialRoute: "/home",
+      initialRoute: "/",
       routes: {
-        //"/home": (context) => homepage(),
+        MyRoutes.homeRoute: (context) => homepage(),
         "/": (context) => loginpage(),
-        //"/login": (context) => loginpage(),
+        MyRoutes.loginRoute: (context) => loginpage(),
       },
     );
   }
